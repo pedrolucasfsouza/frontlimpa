@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap');
+.expandemenu{
+display: flex;
+position: fixed;
+height: 100%;
+width: 30%;
+background-color: lawngreen;
+top:0;
+left: 0;
+z-index: 999;
+transition: all 1s;
+transform-origin: left;
+}
+.off{
+  transform:scaleX(0)
+}
+.on{
+  transform:scaleX(1)
+}
+.Header{
+  background-color: indigo;
+  width: 100%;
+  padding:20px 5%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+justify-content: space-between;
+color: #ffff;
+font-family: "Rubik";}
+
+  .logo{
+    display: flex;
+  }
+  .botoes{
+  display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .botao1{
+    display: flex;
+    flex-flow: column;
+    margin-right: 10px;
+  }
+  .botoes p{
+    margin:0;
+    margin-bottom: 8px;
+    width: max-content;
+    font-size: 15px;
+  }
+.botao1 a{
+  border: 2px solid #ffffff;
+  height: 42px;
+  width: 230px;
+  border-radius: 7px;
+  background: #ffffff;
+  color: indigo;
+  font-weight: bold;
+  font-size: 12px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;}
+  #rogerio{
+    display: none;
+  }
+
+  .botao1 a:hover{
+  background-color: indigo;
+color: #FFFFFFFF;;}
+
+  .botao2 a{
+    height: 42px;
+    width: 230px;
+    border-radius: 7px;
+    border: 2px solid #ffffff;
+    background: none;
+    color: #ffffff;
+    font-size: 12px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;}
+
+.botao2 a:hover{
+  opacity: 75%;
+}
+
+.menu{
+  width: 100%;
+  background-color: #ffffffff;
+  height: 60px;
+  -webkit-box-shadow: -1px 7px 5px 1px rgba(0,0,0,0.09);
+-moz-box-shadow: -1px 7px 5px 1px rgba(0,0,0,0.09);
+box-shadow: -1px 7px 5px 1px rgba(0,0,0,0.09);
+display: flex;
+justify-content: flex-start;
+align-items: center;
+}
+.links{
+
+}
+.links a{
+  font-size: 18px;
+  display: inline-block;
+  text-decoration: none;
+  }
+
+  .links a:hover{
+    color:indigo;
+    opacity: 50%;
+    text-align: center;
+    transition: 0.5s;
+    }
+  
+
+  .links ul li {
+    list-style: none;
+    display: inline;
+    margin-left: 40px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .logo{
+      justify-content: center;
+    }
+    .Header{
+      background-color: indigo;
+      width: 100%;
+      height: 220px;
+      display: flex;
+      align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    color: #ffff;
+    font-family: "Rubik";
+    }
+    .links ul li {
+      display: none;
+    }
+    
+    .logo{
+      width: 90%;
+    }
+    .botoes{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .botao1{
+      display: flex;
+      justify-content: center;
+    
+    }
+      .botao1 a{
+        height: 35px;
+        border-radius: 7px;
+        background: #ffffff;
+        color: indigo;
+        font-weight: bold;
+        font-size: 12px;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.2s;}
+
+    .botao2{
+      display: flex;
+      justify-content: center;
+      
+    }
+    .botao2 a{
+      height: 35px;
+      border-radius: 7px;
+      border: 2px solid #ffffff;
+      background: none;
+      color: #ffffff;
+      font-size: 12px;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.2s;}
+  
+  .botao2 a:hover{
+    opacity: 75%;
+  }
+  #rogerio{
+    display: inline-block;
+  }
+  .naorogerio{
+    display: none;
+  }
+
+
+  }
+
+  @media only screen and (max-width: 867px) {
+    .botao1{
+      margin:0;
+    }
+    .botao2{
+      margin-top: 5px;
+    }
+ 
+  }

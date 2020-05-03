@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap');
+
+.subcontainer{
+  width: 100%;
+  background-color: #11c8b4;
+  font-family: "Rubik";
+  display:flex;
+  font-size: 22px;
+  justify-content: space-around;
+  flex-flow: row;
+  padding:50px 5%;
+  box-sizing: border-box;
+}
+
+.img-sub{
+width: 100%;
+height: auto;
+position: absolute;
+bottom: 0;
+}
+.img-sub-content{
+  display: flex;
+  width: 30%;
+  position: relative;
+}
+.texto-sub{
+  color: #ffffff;
+  text-align: justify;
+  width: 70%;
+  box-sizing: border-box;
+  padding-left: 5%;
+}
+.texto-sub h1{
+  font-size: 40px;
+  margin:0;
+}
+
+.link-sub{
+  display: flex;
+}
+.link-sub a{
+border: 2px solid #ffffff;
+  height: 48px;
+  width: 300px;
+  border-radius: 7px;
+  background: #ffffff;
+  color: #11c8b4;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;}
+  .link-sub a:hover{
+    border: 2px solid #ffffff;
+      background: #11c8b4;
+      color: #ffffff;}
+
+      @media only screen and (max-width: 650px) {
+      .subcontainer{
+        flex-flow: column;
+      padding-top: 420px;
+    align-items: center;}
+
+        .img-sub-content{
+          display: flex;
+          width: 90%;
+          
+        }
+        .texto-sub{
+          padding-top: 30px;
+          width: 100%;
+          padding-left: 0;
+        }
+
+        .link-sub a{
+      width: 100%;}
+
+        .img-sub{
+
+        }
+      }
+
