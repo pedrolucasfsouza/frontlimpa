@@ -1,16 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap');
 .expandemenu{
-display: flex;
-position: fixed;
-height: 100%;
-width: 30%;
-background-color: lawngreen;
-top:0;
-left: 0;
-z-index: 999;
-transition: all 1s;
-transform-origin: left;
-}
+  display: flex;
+  position: fixed;
+  height: 100%;
+  width: 50%;
+  background-color: indigo;
+  color: #ffffff;
+  top:0;
+  left: 0;
+  z-index: 999;
+  transition: all 1s;
+  transform-origin: left;
+justify-content: center;
+text-align: center;
+  }
+  .expandemenu a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+  }
+  .expandemenu li{
+    list-style: none;
+    margin-top: 10px;
+  }
+  .expandemenu ul{
+    padding: 0px;
+    margin-top: 50px;
+  }
 .off{
   transform:scaleX(0)
 }
@@ -20,7 +36,7 @@ transform-origin: left;
 .Header{
   background-color: indigo;
   width: 100%;
-  padding:20px 5%;
+  padding:20px 12%;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -30,6 +46,10 @@ font-family: "Rubik";}
 
   .logo{
     display: flex;
+    max-width: 200px;
+  }
+  .menu-mobile{
+    display: none;
   }
   .botoes{
   display: flex;
@@ -90,6 +110,7 @@ color: #FFFFFFFF;;}
 }
 
 .menu{
+  box-sizing: border-box;
   width: 100%;
   background-color: #ffffffff;
   height: 60px;
@@ -99,6 +120,7 @@ box-shadow: -1px 7px 5px 1px rgba(0,0,0,0.09);
 display: flex;
 justify-content: flex-start;
 align-items: center;
+padding: 0px 5%;
 }
 .links{
 
@@ -124,31 +146,58 @@ align-items: center;
   }
 
   @media only screen and (max-width: 600px) {
-    .logo{
-      justify-content: center;
+    .menu-mobile-icon-close{
+      width: 50px;
     }
+
     .Header{
-      background-color: indigo;
-      width: 100%;
-      height: 220px;
-      display: flex;
-      align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
+    background-color: indigo;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
     color: #ffff;
     font-family: "Rubik";
+    -webkit-box-shadow: -1px 7px 5px 1px rgba(0,0,0,0.09);
+    -moz-box-shadow: -1px 7px 5px 1px rgba(0,0,0,0.09);
+    box-shadow: -1px 7px 5px 1px rgba(0,0,0,0.09);
+    display: flex;
+    }
+    .menu{
+      display: none;
+    }
+    .menu-mobile-content{
+      width: 80%;
+      display: flex;
+justify-content: center;
+    }
+
+    .menu-mobile{
+      width: 30px;
+      display: flex;
+      justify-content: flex-start;
+      display: block;
+    }
+    .menu-icon{
+      display: flex;
+      width: 30px;
+      height: 22px;
+    }
+  
+    .logo{
+width: 130px;
+      display: flex;
     }
     .links ul li {
       display: none;
-    }
-    
-    .logo{
-      width: 90%;
     }
     .botoes{
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+      display: none;
     }
     .botao1{
       display: flex;

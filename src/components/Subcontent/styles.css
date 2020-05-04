@@ -60,7 +60,7 @@ border: 2px solid #ffffff;
       @media only screen and (max-width: 650px) {
       .subcontainer{
         flex-flow: column;
-      padding-top: 420px;
+      padding-top: 460px;
     align-items: center;}
 
         .img-sub-content{
@@ -69,10 +69,18 @@ border: 2px solid #ffffff;
           
         }
         .texto-sub{
-          padding-top: 30px;
+          padding-top: 10px;
           width: 100%;
           padding-left: 0;
+          text-align: center;
         }
+        .texto-sub h1{
+          font-size: 30px;
+        }
+        .texto-sub p{
+          font-size: 18px;
+        }
+
 
         .link-sub a{
       width: 100%;}
@@ -81,4 +89,39 @@ border: 2px solid #ffffff;
 
         }
       }
-
+      @media only screen and (max-width: 600px) {
+        .subcontainer{
+          flex-flow: column;
+        padding-top: 430px;
+      align-items: center;}
+        }
+        @media only screen and (max-width: 555px) {
+          .subcontainer{
+            flex-flow: column;
+          padding-top: 390px;
+        align-items: center;}
+          }
+          @media only screen and (max-width: 500px) {
+            .subcontainer{
+              flex-flow: column;
+            padding-top: 350px;
+          align-items: center;}
+            }
+            @media only screen and (max-width: 450px) {
+              .subcontainer{
+                flex-flow: column;
+              padding-top: 310px;
+            align-items: center;}
+              }
+              @media only screen and (max-width: 400px) {
+                .subcontainer{
+                  flex-flow: column;
+                padding-top: 270px;
+              align-items: center;}
+                }
+                @media only screen and (max-width: 350px) {
+                  .subcontainer{
+                    flex-flow: column;
+                  padding-top: 230px;
+                align-items: center;}
+                  }

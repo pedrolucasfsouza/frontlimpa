@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import logo from "../../img/logo1.png";
+import logo from "../../img/logo2.png";
+import menu from "../../img/menu.png";
+import close from "../../img/close.svg";
 import "../Header/styles.css";
 
 export default class Header extends Component {
@@ -32,27 +34,30 @@ export default class Header extends Component {
             <li naorogerio>
               <a href="#">Contato</a>
             </li>
-            <li naorogerio>
-              <a onClick={() => changeMenu("close")}> FECHAR MENU </a>
+            <li className="menu-mobile-icon-close">
+              <a onClick={() => changeMenu("close")}> <img src={close}></img> </a>
             </li>
           </ul>
         </div>
         <div className="Header">
+        <div className="menu-mobile">
+          <a onClick={() => changeMenu("open")}><img className="menu-icon" src={menu}></img></a>
+          </div>
+          
+          <div className="menu-mobile-content">
           <div className="logo">
             <img src={logo} className="logo" alt="logo" />
+          </div>
           </div>
           <div className="botoes">
             <div className="botao1">
               <p>Foi multado? não fique sem dirigir</p>
               <a href="http://google.com.br">SOLICITAR ANÁLISE GRÁTIS</a>
             </div>
-            <div className="botao2">
-              <a href="http://google.com.br">STATUS DO MEU RECURSO</a>
-            </div>
           </div>
         </div>
         <div className="menu">
-          <a onClick={() => changeMenu("open")}>MENU</a>
+          <a className="menu-mobile" onClick={() => changeMenu("open")}>MENU</a>
           <div className="links">
             <ul>
               <li naorogerio>
