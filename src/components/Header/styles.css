@@ -36,7 +36,7 @@ text-align: center;
 .Header{
   background-color: indigo;
   width: 100%;
-  padding:20px 12%;
+  padding:20px 5%;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -119,9 +119,7 @@ color: #FFFFFFFF;;}
 box-shadow: -1px 7px 5px 1px rgba(0,0,0,0.09);
 display: flex;
 justify-content: flex-start;
-align-items: center;
-padding: 0px 5%;
-}
+align-items: center;}
 .links{
 
 }

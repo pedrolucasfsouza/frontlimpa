@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap');
+.footer{
+  width: 100%;
+  box-sizing: border-box;
+  background-color: gray;
+  height: 100px;
+}

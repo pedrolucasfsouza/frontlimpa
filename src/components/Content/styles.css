@@ -28,7 +28,7 @@
   font-size: 20px;
 }
 .texto{
-  width: 30%;
+  width: 40%;
 }
 .img{
   width: 500px;
@@ -84,6 +84,7 @@ color: #ffffff;}
     font-size: 16px;
     padding: 0px;
     margin:10px 0px;
+    text-align: justify;
   }
 .botao2{
   margin-bottom: 10px;
