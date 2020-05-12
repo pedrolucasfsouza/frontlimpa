@@ -10,12 +10,9 @@ function Subcontent() {
       </div>
       <div className="texto-sub">
         <p>
-          <h1>AQUI VAI UM TÍTULO EM CAIXA ALTA</h1>{" "}
+          <h1>NÃO FIQUE SEM A SUA HABILITAÇÃO</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-            ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-            accumsan lacus vel facilisis.
+          Limpa Multas é uma empresa especializada na elaboração de recursos administrativos ao DETRAN.  Descubra com o limpa multas, como deve ser feito, o recurso para cancelar a sua multa. Você nos envia a documentação necessária, e em até 12H, retornaremos com o recurso personalizado para você cancelar a sua multa. 
           </p>
         </p>
         <div className="link-sub">
