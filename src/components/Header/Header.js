@@ -20,7 +20,7 @@ export default class Header extends Component {
         <div id="expandemenu" className="expandemenu off">
           <ul>
             <li naorogerio>
-              <a href="#">Inicio</a>
+              <a href="/">Inicio</a>
             </li>
             <li naorogerio>
               <a href="#">Como Recorrer?</a>

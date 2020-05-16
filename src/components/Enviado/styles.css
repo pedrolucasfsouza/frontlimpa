@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap');
+.container-enviado{
+  width: 100%;
+  box-sizing: border-box;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+}
+
+.texto-enviado{
+  padding: 5px 5%;
+  display: flex;
+  width: 50%;
+  height: 100px;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  color: indigo;
+  justify-content: space-between;
+}
+.texto-enviado h1{
+  font-size: 25px;
+  font-weight: 600;
+}
+.texto-enviado h2{
+  font-size: 20px;
+  font-weight: 400;
+}
+.animation{
+  display: flex;
+width: 20%
+}
+@media only screen and (max-width: 700px) {
+  .animation{
+  width: 80%;
+  }
+  .texto-enviado{
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

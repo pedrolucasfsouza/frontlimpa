@@ -24,11 +24,16 @@
 }
 
 .form{
+  box-sizing: border-box;
+  padding: 40px 5%;
   width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  height: 200px;
+  height: auto;
+  flex-flow: column;
+  align-items: center;
+  align-content: center;
 }
 .input-small{
   display: flex;
@@ -72,20 +77,12 @@
   background-color: #ffffff;
 color: indigo;}
 
-@media only screen and (max-width: 800px) {
-  .input-small{
-    width: 100%;
-  }
-  .form{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    height: 320px;
-  }
-  .botao-analise button{
-    height: 50px;
-    width: 100%;
-}
-  
+button{
+  margin-top: 20px;
+  width: 300px;
+  height: 40px;
+  background-color: indigo;
+  color: #ffffff;
+  font-weight: 500;
+  border: none;
 }
