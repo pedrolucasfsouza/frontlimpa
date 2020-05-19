@@ -17,7 +17,7 @@ onChange = (e) => {
 onSubmit = (e) => {
     // get our form data out of state
     const { nome, password} = this.state;
-    api.post('/enviar', {
+    api.post('/login', {
       name:nome,
       password:password,
     })

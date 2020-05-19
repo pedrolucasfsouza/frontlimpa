@@ -3,6 +3,7 @@ import Form from "../Formanalise/Formanalise"
 import Homepage from "../Home/Home"
 import Adm from "../Adm/Adm"
 import Login from "../Login/Login"
+import Upload from "../Upload/Upload"
 import Enviado from "../Enviado/Enviado"
 import {
   BrowserRouter as Router,
@@ -18,6 +19,7 @@ export default (Routes) => {
       <Route path="/enviado" exact={true} component={Enviado} />
         <Route path="/form-analise" exact={true} component={Form} />
         <Route path="/login" exact={true} component={Login} />
+        <Route path="/upload" exact={true} component={Upload} />
         <Route path="/adm" exact={true} component={Adm} />
       </Switch>
     </Router>

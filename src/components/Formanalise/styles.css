@@ -5,6 +5,14 @@
   box-sizing: border-box;
   font-family: "Rubik";
 }
+.container-title{
+  padding: 20px 0px 0px 0px;
+  display: flex;
+  width: 100%;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .container-content h1{
   padding:0px;
@@ -28,16 +36,19 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  height: 200px;
+  height: 150px;
 }
-.input-small{
+.input-texts{
   display: flex;
-  width: 350px;
+  justify-content: space-around;
+  width: 100%;
+  padding: 20px 0px;
 }
 .input-big{
   width: 100%;
 }
 .content-upload{
+  padding: 0px 5%;
   display: flex;
   flex-flow: column;
   justify-content: space-around;
@@ -46,6 +57,7 @@
 .content-upload p{
   margin: 0px;
   font-family: "Rubik";
+  color: indigo;
   font-weight: bold;
 }
 .botao-analise{
@@ -72,9 +84,15 @@
   background-color: #ffffff;
 color: indigo;}
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1100px) {
   .input-small{
     width: 100%;
+  }
+  .input-texts{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    flex-flow: column;
   }
   .form{
     width: 100%;

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import logo from "../../img/logo2.png";
 import menu from "../../img/menu.png";
-import close from "../../img/close.svg";
+import close from "../../img/sign.svg";
 import "../Header/styles.css";
 
 export default class Header extends Component {
@@ -34,7 +34,7 @@ export default class Header extends Component {
             <li naorogerio>
               <a href="#">Contato</a>
             </li>
-            <li className="menu-mobile-icon-close">
+            <li className="menu-mobile-close">
               <a onClick={() => changeMenu("close")}> <img src={close}></img> </a>
             </li>
           </ul>
