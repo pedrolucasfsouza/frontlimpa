@@ -7,9 +7,9 @@ function Content() {
     <div className="content">
       <div className="texto">
         <h1>FOI MULTADO?</h1>
-        <h3>recebeu um comunicado do DETRAN?</h3>
+        <h3>Recebeu um comunicado do DETRAN?</h3>
         <p>
-        Entre em contato, com nosso time de especialistas, e realize uma ÁNALISE GRATUITA do seu caso. Retornaremos, com os trâmites administrativos, para realizar o cancelamento da sua multa!
+        Entre em contato, com nosso <b>time de especialistas</b>, e realize uma <b>ánalise gratuita.</b> Retornaremos, com os trâmites administrativos, para realizar o <b>cancelamento da sua multa!</b>
         </p>
         <div className="botao">
           <a href="/form-analise">SOLICITAR ANALISE GRÁTIS</a>

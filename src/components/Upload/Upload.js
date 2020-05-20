@@ -1,51 +1,60 @@
-import React, {Component} from "react";
+import React, { useState } from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import TextField from '@material-ui/core/TextField';
+import Grid from '@material-ui/core/Grid';
+import AccountCircle from '@material-ui/icons/AccountCircle';
+import EmailIcon from '@material-ui/icons/Email';
+import PhoneIcon from '@material-ui/icons/Phone';
+import Header from "../../components/Header/Header"
 import api from "../../components/services/api"
 
-export default class Upload extends Component {
-  state = {
-    file: null,
-    name:'pedro'
+const useStyles = makeStyles((theme) => ({
+  margin: {
+    margin: theme.spacing(1),
+  },
+}));
+
+export default function Formanalise() {
+
+    const [name, setName] = useState('Nome');
+
+  const classes = useStyles();
+
+  return (
+    <div>
+      <div className={classes.margin}>
+        <Grid container spacing={1} alignItems="flex-end">
+          <Grid item>
+            <AccountCircle />
+          </Grid>
+          <Grid item>
+            <TextField id="input-with-icon-grid" label="Nome" />
+          </Grid>
+        </Grid>
+      </div>
+
+      <div className={classes.margin}>
+        <Grid container spacing={1} alignItems="flex-end">
+          <Grid item>
+            <EmailIcon />
+          </Grid>
+          <Grid item>
+            <TextField id="input-with-icon-grid" label="Email" />
+          </Grid>
+        </Grid>
+      </div>
+
+      <div className={classes.margin}>
+        <Grid container spacing={1} alignItems="flex-end">
+          <Grid item>
+            <PhoneIcon />
+          </Grid>
+          <Grid item>
+            <TextField id="input-with-icon-grid" label="Telefone" />
+          </Grid>
+        </Grid>
+  <p>{name}</p>
+      </div>
+    </div>
+  );
 }
-
-handleFile(e){
-    let file = e.target.files[0]
-    this.setState({file:file})
-
-}
-
-handleUpload(e) {
-    let file = this.state.file
-
-    let formdata = new FormData()
-
-    formdata.append('file', file)
-    formdata.append('name', 'Pedro Lucas')
-    api({
-        url:'/enviar',
-        method: 'POST',
-        headers:{
-            authorization: 'tanto faz',
-        },
-        data: formdata
-    }).then((res) =>{
-
-        console.log('upload realizado com sucesso!')
-
-    },(err)=>{
-       console.log(err)
-    })
-}
-
-render() {
-    return(
-<div className='App'>
-    <h1>UPLOAD DE ARQUIVOS</h1>
-    <form>
-        <div className="">
-            <label>SELECT FILE</label>
-            <input type="file" name="file" onChange={(e)=>this.handleFile(e)}/>
-            <button type='button' onClick={()=>this.handleUpload()}>Upload</button>
-        </div>
-    </form>
-</div>
-  )}}

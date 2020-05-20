@@ -24,7 +24,8 @@ animationData:require('../../img/ok2.json')
 <div className="animation"ref={container}></div>
    <div className="texto-enviado">
     
-<h1>SOLITAÇÃO DE ANALISE ENVIADA COM SUCESSO!</h1>
+<h1>SOLICITAÇÃO DE ÁNALISE ENVIADA COM SUCESSO!</h1>
+
 <h2>Fique atento ao seu email e whatsapp, iremos retornar em até 12h úteis</h2>
 </div>
 

@@ -8,26 +8,38 @@ function Content() {
 
     <div className="content-beneficios-item">
       <img className="content-beneficios-img"src={beneficio}></img>
-      <h1>MULTA</h1>
-      <p>As multas são classificadas por sua natureza, em escala ascendente de gravidade, são classificas por leve, média, grave e gravíssima. Levou alguma multa? Podemos te ajudar, faça seu orçamento gratuito.</p>
+      <h1>CELULAR</h1>
+      <p>Usamos o celular para quase tudo na nossa rotina, mas não podemos manusear quando estamos no trânsito. Utilizar o celular no trânsito é uma infração média!</p>
     </div>
 
     <div className="content-beneficios-item">
       <img className="content-beneficios-img"src={beneficio}></img>
-      <h1>SUSPENSÃO</h1>
-      <p>A suspensão da CNH, ocorre, quando o condutor atinge o número máximo de 20 ou mais pontos, dentro de 12 meses, por qualquer infração. Nesta hipótese a CNH, pode ficar suspensa pelo prazo de 6 e 12 meses. Teve sua carteira suspensa? Conte com nosso time, realize seu orçamento grátis.</p>
+      <h1>VELOCIDADE</h1>
+      <p>Fique ligado nos limites de velocidade das vias, trafegar 20% acima da velocidade permitida, é uma infração média.</p>
     </div>
 
     <div className="content-beneficios-item">
       <img className="content-beneficios-img"src={beneficio}></img>
-      <h1>CASSAÇÃO</h1>
-      <p>É a maior penalidade do CTB (Código de Trânsito Brasileiro). O condutor é punido quando há reincidência de infrações que causam  suspensão direta, se aconteceram no prazo de um ano após a primeira suspensão. A cassação também é punível quando o condutor comete algum delito de trânsito.</p>
+      <h1>ESTACIONAMENTO</h1>
+      <p>Muito cuidado com as paradas rápidas em locais proibidos para resolver pequenas coisas, isso pode complicar a sua vida. É uma multa gravíssima. </p>
+    </div>
+
+    <div className="content-beneficios-item">
+      <img className="content-beneficios-img"src={beneficio}></img>
+      <h1>VIA EXCLUSIVA</h1>
+      <p>A faixa exclusiva de ônibus sempre está livre, cuidado ao trafegar nela, querer chegar um pouco mais rápido em casa pode custar uma infração de natureza grave. </p>
+    </div>
+
+    <div className="content-beneficios-item">
+      <img className="content-beneficios-img"src={beneficio}></img>
+      <h1>SEMÁFORO</h1>
+      <p>Acelerar quando o semáforo fica amarelo, faz com que a maioria das pessoas passe em sinal vermelho, o que é passível de multa.</p>
     </div>
 
     <div className="content-beneficios-item">
       <img className="content-beneficios-img"src={beneficio}></img>
       <h1>LEI SECA</h1>
-      <p>A lei seca, tem consequências, para os que tem a embriaguez confirmada e para aqueles que se recusam a fazer o teste de bafômetro, que são a multa no valor de R$ 2.934,70, suspensão do direito de dirigir e recolhimento da CNH. Parou na blitz da lei seca, quer continuar dirigindo? Entre em contato com nosso time e faça seu orçamento gratuito! Nós preparamos o seu recurso.</p>
+      <p>Bebida e direção não combinam, quando beber não dirija. Condutores alcolizados produzem mais acidentes.</p>
     </div>
 
 

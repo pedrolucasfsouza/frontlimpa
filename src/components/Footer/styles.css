@@ -2,6 +2,14 @@
 .footer{
   width: 100%;
   box-sizing: border-box;
-  background-color: indigo;
+  background-color: rgb(27, 26, 26);
   height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#ffffff;
+}
+
+.footer h1{
+font-size: 20px;
 }

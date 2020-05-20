@@ -19,21 +19,18 @@ export default class Header extends Component {
       <>
         <div id="expandemenu" className="expandemenu off">
           <ul>
-            <li naorogerio>
-              <a href="/">Inicio</a>
-            </li>
-            <li naorogerio>
-              <a href="#">Como Recorrer?</a>
-            </li>
-            <li naorogerio>
-              <a href="#">Sobre Nós</a>
-            </li>
-            <li naorogerio>
-              <a href="#">Depoimentos</a>
-            </li>
-            <li naorogerio>
-              <a href="#">Contato</a>
-            </li>
+          <li naorogerio>
+                <a href="/">Inicio</a>
+              </li>
+              <li naorogerio>
+                <a href="/">Como Recorrer?</a>
+              </li>
+              <li naorogerio>
+                <a href="/">Informações</a>
+              </li>
+              <li naorogerio>
+                <a href="/">Recurso Personalizado</a>
+              </li>
             <li className="menu-mobile-close">
               <a onClick={() => changeMenu("close")}> <img src={close}></img> </a>
             </li>
@@ -51,8 +48,8 @@ export default class Header extends Component {
           </div>
           <div className="botoes">
             <div className="botao1">
-              <p>Foi multado? não fique sem dirigir</p>
-              <a href="http://google.com.br">SOLICITAR ANÁLISE GRÁTIS</a>
+              <p>Foi multado? Não fique sem dirigir.</p>
+              <a href="/form-analise">RECORRER MULTA</a>
             </div>
           </div>
         </div>
@@ -61,19 +58,16 @@ export default class Header extends Component {
           <div className="links">
             <ul>
               <li naorogerio>
-                <a href="#">Inicio</a>
+                <a href="/">Inicio</a>
               </li>
               <li naorogerio>
-                <a href="#">Como Recorrer?</a>
+                <a href="/">Como Recorrer?</a>
               </li>
               <li naorogerio>
-                <a href="#">Sobre Nós</a>
+                <a href="/">Informações</a>
               </li>
               <li naorogerio>
-                <a href="#">Depoimentos</a>
-              </li>
-              <li naorogerio>
-                <a href="#">Contato</a>
+                <a href="/">Recurso Personalizado</a>
               </li>
             </ul>
           </div>

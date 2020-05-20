@@ -1,8 +1,16 @@
-import React, {Component} from "react";
-import "../Formanalise/styles.css";
+import React, {Component} from 'react';
+import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
+import Grid from '@material-ui/core/Grid';
+import AccountCircle from '@material-ui/icons/AccountCircle';
+import EmailIcon from '@material-ui/icons/Email';
+import PhoneIcon from '@material-ui/icons/Phone';
+import "../Formanalise/Ronaldo.css";
 import Header from "../../components/Header/Header"
 import api from "../../components/services/api"
+import Input from '@material-ui/core/Input';
+import InputLabel from '@material-ui/core/InputLabel';
+import InputAdornment from '@material-ui/core/InputAdornment';
 
 export default class Formanalise extends Component {
   state = {
@@ -12,6 +20,7 @@ export default class Formanalise extends Component {
     description:'',
     file: null
 }
+
 
 handleFile(e){
   let file = e.target.file[0]
@@ -56,44 +65,83 @@ const {nome, email, phone, description, file} = this.state
 }
 
 render() {
+
   const { nome, email, phone, description } = this.state;
 
+  const classes = makeStyles((theme) => ({
+    margin: {
+      margin: theme.spacing(0),
+    },
+  }));
     return(
     <>
     <Header />
- <div className="container-content">
- <div className="container-title">
+ <div id="container-flex">
+ <div id="container-text-top">
    <h1>CONTE PARA NÓS</h1>
-   <h3>Sobre o seu caso... Nosso time de advogados irá analisar e retornar em até 12h</h3>
+   <h3>Daremos um retorno em até 12h. Fique atento ao seu e-mail e whatsapp.</h3>
   </div>
-   <div className='form'>
-     <div className="input-texts">
-        <TextField className="input-small" name="nome" required id="standard-required" value={nome} onChange={this.onChange}label="Digite seu nome" defaultValue="" />
-        <TextField className="input-small" name="email"required id="standard-required" value={email} onChange={this.onChange}label="Digite seu e-mail" defaultValue="" />
-        <TextField className="input-small" name="phone" required id="standard-required" value={phone} onChange={this.onChange}label="Digite seu Telefone com DDD" placeholder="ex: 27 9999-9999" defaultValue="" />
-        
-        </div>
-       
+   <div id='form-case'>
+        <Input
+        value={nome} onChange={this.onChange} name="nome"
+        className="input-form"
+          id="input-with-icon-adornment"
+          placeholder="Digite seu nome"
+          startAdornment={
+            <InputAdornment position="start">
+              <AccountCircle />
+            </InputAdornment>
+          }
+        />
+
+<Input
+        defaultValue={email} onChange={this.onChange}
+        className="input-form"
+          id="input-with-icon-adornment"
+          placeholder="Digite seu e-mail"
+          startAdornment={
+            <InputAdornment position="start">
+              <EmailIcon />
+            </InputAdornment>
+          }
+        />
+
+<Input
+        defaultValue={phone} onChange={this.onChange} 
+        className="input-form"
+          id="input-with-icon-adornment"
+          placeholder="Digite seu telefone (com DDD)"
+          startAdornment={
+            <InputAdornment position="start">
+              <PhoneIcon />
+            </InputAdornment>
+          }
+        />
+
         <TextField
           onChange={this.onChange}
           value={description}
           id="outlined-multiline-static"
-          label="Observações e detalhes"
+          label="Observações e detalhes (opcional)"
           className="input-big"
           multiline
-          rows={4}
+          rows={3}
           name="description"
           defaultValue=""
           placeholder="Descreva um pouco sobre o seu caso com detalhes"
           variant="outlined"
         />
+        <div className="texto-end-form">
+<p>Forneça as informações corretas, para contato do nosso time</p>
+<p>* <b>Caso queira solicitar mais de uma ánalise de multa. Preencha o formulário quantas vezes forem necessárias.</b></p>
+</div>
         </div>
-        <div className="content-upload">
+        <div id="content-upload-file">
+          
         <p>Anexe a foto da sua multa</p>
-        <input type="file" name="file" onChange={(e)=>this.handleFile(e)}/>
-        <div className="botao-analise">
-        <button type="submit" onClick={() => this.onSubmit()}>ENVIAR ANALISE</button>
-       </div>
+        <input className="input-upload" type="file" name="file" onChange={(e)=>this.handleFile(e)}/>
+
+        <button className="content-upload-file-button"type="submit" onClick={() => this.onSubmit()}>SOLICITAR ANALISE GRÁTIS</button>
         </div>
  </div>
  </>

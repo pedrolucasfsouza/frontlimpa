@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;900&display=swap');
+*{box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+#container-flex{
+  box-sizing: border-box;
+  padding: 20px 5%;
+  width: 100%;
+}
+#container-text-top{
+  display: flex;
+  flex-flow: column;
+  color: indigo;
+  align-items: center;
+}
+#container-text-top h1{
+font-size: 30px;
+}
+#container-text-top h3{
+font-size: 20px;
+}
+
+#form-case{
+  display: flex;
+  width: 100%;
+  flex-flow: column;
+  height: auto;
+}
+.input-form{
+  margin: 15px 0px;
+}
+
+#content-upload-file{
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  margin-top: 20px;
+  padding: 10px 1%;
+  background-color: rgb(240, 240, 240);
+}
+
+#content-upload-file p{
+  font-size: 14px;
+  font-weight: 500;
+  color: indigo;
+}
+.content-upload-file-button{
+width: 0%;
+height: 45px;
+border-radius: 8px;
+cursor: pointer;
+}
+
+.content-upload-file-button{
+  width: 50%;
+  background-color: indigo;
+  height: 45px;
+  border-radius: 8px;
+  cursor: pointer;
+  }
+  .texto-end-form p{
+    margin-top: 2px;
+    font-size: 13px;
+    font-weight: 300;
+    color: indigo;
+  }
+
+@media only screen and (max-width: 600px) {
+  .content-upload-file-button{
+  width: 100%;
+  }
+}
+

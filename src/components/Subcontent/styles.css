@@ -65,13 +65,14 @@ border: 2px solid #ffffff;
       .subcontainer{
         flex-flow: column;
       padding-top: 460px;
+      padding-bottom: 15px;
     align-items: center;}
 
         .img-sub-content{
           display: flex;
           width: 90%;
-          
         }
+        
         .texto-sub{
           padding-top: 10px;
           width: 100%;
@@ -80,9 +81,11 @@ border: 2px solid #ffffff;
         }
         .texto-sub h1{
           font-size: 30px;
+          text-align: center;
         }
         .texto-sub p{
           font-size: 16px;
+          text-align: justify;
         }
 
 

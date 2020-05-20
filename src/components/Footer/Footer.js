@@ -3,7 +3,10 @@ import "../Footer/styles.css";
 
 function Footer() {
   return (
- <div className="footer"></div>
+ <div className="footer">
+
+   <h1>Limpa Multas ®</h1>
+ </div>
   );
 }
 
