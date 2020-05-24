@@ -11,16 +11,16 @@ import {
   Route,
 } from "react-router-dom";
 
-export default (Routes) => {
+export default function Routes() {
   return (
     <Router>
       <Switch>
-      <Route path="/" exact={true} component={Homepage} />
-      <Route path="/enviado" exact={true} component={Enviado} />
-        <Route path="/form-analise" exact={true} component={Form} />
-        <Route path="/login" exact={true} component={Login} />
-        <Route path="/upload" exact={true} component={Upload} />
-        <Route path="/adm" exact={true} component={Adm} />
+      <Route path="/" exact component={Homepage} />
+      <Route path="/enviado" exact component={Enviado} />
+        <Route path="/form-analise" exact component={Form} />
+        <Route path="/login" exact component={Login} />
+        <Route path="/upload" exact component={Upload} />
+        <Route path="/adm" exact component={Adm} />
       </Switch>
     </Router>
   );
