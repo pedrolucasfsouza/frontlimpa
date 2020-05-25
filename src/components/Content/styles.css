@@ -68,6 +68,7 @@ color: indigo}
   }
   .img{
     width: 100%;
+    max-height: 170px;
     display: flex;
     justify-content: center;
   }

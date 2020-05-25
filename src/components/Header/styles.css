@@ -213,6 +213,7 @@ justify-content: center;
   
     .logo{
 width: 130px;
+height: 45px;
       display: flex;
     }
     .links ul li {
