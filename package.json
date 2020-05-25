@@ -1,6 +1,7 @@
 {
   "name": "limpamultas",
   "version": "0.1.0",
+  "main": "app.js",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.9.14",
@@ -18,7 +19,7 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "start": "node server",
+    "start": "node app",
     "postinstall": "npm run build",
     "build": "react-scripts build",
     "test": "react-scripts test",
