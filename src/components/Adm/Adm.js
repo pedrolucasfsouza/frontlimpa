@@ -49,7 +49,7 @@ export default class Adm extends Component {
       <p>{c.description}</p>
       </div>
       
-      <a href={`http://localhost:3000/uploads/${c.multa}`}><img className="multa" src={`http://localhost:3000/uploads/${c.multa}`}></img></a></article> )}
+      <a href={`${c.multa}`}><img className="multa" src={`${c.multa}`}></img></a></article> )}
       </div></>
 
     );
